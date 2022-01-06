@@ -2,12 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
-import MattsMachine from "./MattsMachine";
+import MattsMachineControl from "./MattsMachineControl";
 import reportWebVitals from "./reportWebVitals";
+import Resolver from "./Resolver";
 
 ReactDOM.render(
   <React.StrictMode>
-    <MattsMachine />
+    <MattsMachineControl />
+    <Resolver />
     <App />
   </React.StrictMode>,
   document.getElementById("root")
