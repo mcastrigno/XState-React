@@ -9,11 +9,11 @@ import { MattsMachineGlobalStateProvider } from "./MattsMachineGlobalState";
 
 ReactDOM.render(
   <React.StrictMode>
-    <MattsMachineGlobalStateProvider />
-    <MattsMachineControl />
-    <Resolver />
-    <App />
-    <MattsMachineGlobalStateProvider />
+    <MattsMachineGlobalStateProvider>
+      <MattsMachineControl />
+      <Resolver />
+      <App />
+    </MattsMachineGlobalStateProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );
