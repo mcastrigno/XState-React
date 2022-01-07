@@ -5,12 +5,15 @@ import App from "./App";
 import MattsMachineControl from "./MattsMachineControl";
 import reportWebVitals from "./reportWebVitals";
 import Resolver from "./Resolver";
+import { MattsMachineGlobalStateProvider } from "./MattsMachineGlobalState";
 
 ReactDOM.render(
   <React.StrictMode>
+    <MattsMachineGlobalStateProvider />
     <MattsMachineControl />
     <Resolver />
     <App />
+    <MattsMachineGlobalStateProvider />
   </React.StrictMode>,
   document.getElementById("root")
 );
