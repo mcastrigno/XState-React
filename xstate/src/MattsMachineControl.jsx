@@ -1,5 +1,3 @@
-import { useMachine } from "@xstate/react";
-import { promiseMachine } from "./MattsMachine";
 import React, { useContext } from "react";
 import { MattsMachineGlobalStateContext } from "./MattsMachineGlobalState";
 import { useSelector } from "@xstate/react";

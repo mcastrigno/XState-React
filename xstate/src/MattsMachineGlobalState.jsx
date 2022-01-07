@@ -4,7 +4,7 @@ import { promiseMachine } from "./MattsMachine";
 
 export const MattsMachineGlobalStateContext = createContext({});
 
-export const GlobalStateProvider = (props) => {
+export const MattsMachineGlobalStateProvider = (props) => {
   const promiseService = useInterpret(promiseMachine);
 
   return (
