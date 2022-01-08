@@ -11,7 +11,7 @@ const rejectedSelector = (state) => {
 };
 
 const reslovedSelector = (state) => {
-  return state.matches("resloved");
+  return state.matches("resolved");
 };
 
 const MattsMachineControl = (props) => {
